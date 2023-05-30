@@ -1,0 +1,26 @@
+public class Partida {
+
+private Time time1;
+private Time time2;
+
+public Partida (Time time1, Time time2) {
+this.time1 = time1;
+this.time2 = time2;
+}
+
+  public void resultado (int gol1, int gol2) {
+if (gol1 > gol2) {
+time1.setPontuacao(time1.getPontuacao + 3);
+                  } else if (gol2 > gol1) {
+                  time2.setPontuacao(time2.getPontuacao + 3);
+                                           } else {
+                                          time1.setPontuacao(time1.getPontuacao + 1);
+                                          time2.setPontuacao(time2.getPontuacao + 1);
+                                                  }
+                                              }
+
+  	@Override
+public String toString() {
+		return "Time: " + nome + " - Pontuação: " + pontuacao + ".";
+	}  
+}
