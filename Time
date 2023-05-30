@@ -27,8 +27,7 @@ public void setPontuacao(int pontuacao) {
 		this.pontuacao = pontuacao;
 	}
   
-  	@Override
-public String toString() {
-		return "Time: " + nome + " - Pontuação: " + pontuacao + ".";
+public void classificacao() {
+		System.out.println("Time: " + nome + " - Pontuação: " + pontuacao + ".");
 	}
 }
